@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="webapp/WEB-INF/base/emfrontend/views/search/reports"/>
+	<classpathentry kind="src" path="webapp/WEB-INF/base/emfrontend/views/settings/metadata/views"/>
+	<classpathentry kind="src" path="webapp/WEB-INF/base/entermedia/catalog/model"/>
+	<classpathentry kind="src" path="webapp/WEB-INF/base/entermedia/catalog/events/scripts"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/openedit"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-ooffice"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-cumulus"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/sundial"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/workmonger"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-aspera"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/resin3.x"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
