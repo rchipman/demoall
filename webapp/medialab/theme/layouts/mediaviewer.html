@@ -1,0 +1,61 @@
+$context.putPageValue("showhover", "false")
+$context.putPageValue("thumbsize", "thumb")
+$context.putPageValue("showcaption", "true")
+
+
+
+<div>
+<a class="jbutton" href="$home$apphome/views/activity/downloadassets.html?sourcepath=$asset.sourcepath"><span>[[Download]]</span></a>
+<a class="jbutton" href="$home$apphome/views/activity/emailassets.html?sourcepath=$asset.sourcepath"><span>[[Email]]</span></a>
+<a class="jbutton" href="$home$apphome/views/activity/publishassets.html?sourcepath=$asset.sourcepath"><span>[[Export]]</span></a>
+</div>
+$pages.include("$apphome/components/albums/basket/toggleitem.html?assetid=$asset.id?")
+
+
+
+<div class="jtitlebar">Asset Details</div>
+<div class="editbody">
+
+<table>
+<tr>
+<td>
+  $pages.include("$apphome/components/mediaviewer/assettype/index.html",$context)
+</td>
+<td rowspan="4">
+	<table>
+	<tr>
+	<td>
+	  $pages.include("$apphome/components/mediaviewer/player/index.html",$context)
+	  $pages.include("$apphome/components/mediaviewer/details/fileproperties.html")
+	<td>
+	  $pages.include("$apphome/components/mediaviewer/details/metadataedit.html")
+	</td>
+	</tr> 
+	</table> 
+</td>
+</tr>
+<tr>
+	<td>
+		<div class="glossybutton">
+            <a href="#"><span>[[File Details]]</span></a>
+		</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="glossybutton">
+            <a href="#"><span>[[Activity]]</span></a>
+		</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="glossybutton">
+            <a href="#"><span>[[Digital Rights]]</span></a>
+		</div>
+	</td>
+</tr>
+</table>
+
+
+</div>

@@ -1,0 +1,28 @@
+<properties>
+	<property id="firstName" required="true"/>
+	<property id="lastName" required="true"/>
+	<property id="email" viewtype="matched" header="blank"/>
+	<property id="password" viewtype="password" required="true" editable="true" header="blank"/>
+	
+	<property id="enabled" header="blank"/>
+	<property id="officephone" header="blank"/>
+	<property id="mobilephone" />
+	
+	<property id="officestreet" header="Office Address">Street</property>
+	<property id="officecity" >City</property>
+	<property id="officestate">State</property>
+	<property id="officezip" >Zipcode</property>
+	<property id="officecountry"  blankoption="false">Country</property>
+	
+	<property id="mailingsameasoffice" header="Mailing Address">Same as Office Address</property>
+	
+	<property id="mailingstreet">Street</property>
+	<property id="mailingcity" >City</property>
+	<property id="mailingstate" >State</property>
+	<property id="mailingzip" >Zipcode</property>
+	<property id="mailingcountry" blankoption="false" >Country</property>
+	
+	<property id="notes" viewtype="textarea" header="blank"/>
+	<property id="assistant" />
+	<property id="birthdate" picker="false"/>
+</properties> 

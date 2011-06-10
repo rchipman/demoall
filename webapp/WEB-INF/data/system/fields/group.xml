@@ -1,0 +1,12 @@
+<properties>		
+	<property id="id" index="true" stored="true"  keyword="true"  >id</property>
+	<property id="name" index="true" stored="true" editable="true" keyword="true"  >Name</property>
+
+	<property id="uploadpermission" stored="true" editable="true"  datatype="list" listid="accesslevels">Upload Access</property>
+	<property id="assetspermission" stored="true" editable="true"  datatype="list" listid="accesslevels">Assets Access</property>
+	<property id="orderspermission" stored="true" editable="true"  datatype="list" listid="partialaccesslevels">Orders Access</property>
+	<property id="settingspermission" stored="true" editable="true" datatype="list" listid="partialaccesslevels">Settings Access</property>
+	<property id="usermanagerpermission" stored="true" editable="true" datatype="list" listid="accesslevels">Users / Groups Access</property>
+
+	
+</properties>

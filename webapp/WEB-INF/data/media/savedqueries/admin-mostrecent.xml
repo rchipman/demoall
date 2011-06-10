@@ -1,0 +1,8 @@
+
+<query>
+  <catalogs>
+    <catalog id="media/catalogs/public"/>
+  </catalogs>
+  <term id="description" val="*" op="matches"/>
+  <inputs/>
+</query>

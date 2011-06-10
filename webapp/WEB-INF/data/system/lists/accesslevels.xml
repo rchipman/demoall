@@ -1,0 +1,4 @@
+<accesslevels>
+	<accesslevel id="none">None</accesslevel>
+	<accesslevel id="full">Full</accesslevel>
+</accesslevels>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+  <property name="fallbackdirectory">/WEB-INF/base/emfrontend</property>
+  <property name="title">Stock Video</property>
+  <property name="applicationid">stockem</property>
+  <property name="catalogid">media/catalogs/photo</property>
+  <property name="parentapplicationid">media</property>
+  <property name="allowguestregistration">false</property>
+  <property name="systemfromemail">noreply@entermediasoftware.com</property>
+  <property name="to">support@entermediasoftware.com</property>
+  <property name="subjectprefix">Demo order</property>
+  <property name="subjectpostfix">received</property>
+  
+  <permission name="viewviews">
+  	<or>
+		<group name="administrators"/>
+  	</or>
+  </permission>
+  
+  	<permission name="viewsettings">
+		<or>
+			<group name="administrators"/>
+		</or>
+	</permission>
+
+  	<permission name="editbasket">
+		<user />
+	</permission>
+
+  	<permission name="view">
+		<user />
+	</permission>
+
+
+</page>

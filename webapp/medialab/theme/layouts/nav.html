@@ -1,0 +1,38 @@
+ 
+ <ul class="hmenu">
+#if($user)
+
+ <li id="hmenufirstlink" class="sectionactivity"><a  href="$home$apphome/index.html"><span>Activity</span></a></li>
+
+#if( $canviewupload )
+ <li class="sectionupload"><a href="$home$apphome/views/upload/index.html"><span>Upload</span></a></li>
+#end
+
+#if( $canviewassets )
+<li class="sectionassets"><a href="$home$apphome/views/categories/index.html"><span>Assets</span></a></li>
+
+<li id="hmenulast" class="sectionbasket">
+<div id="basketmenu" class="emmenuitem">
+$pages.include("$apphome/components/albums/basket/menuitem.html")
+</div> 
+</li>
+#end
+
+#end
+
+
+ </ul>
+
+#if( $canviewassets )
+ 
+$pages.include("$apphome/components/uploadqueue/index.html", $context)
+ 
+#end 
+##TODO: Replace this with a <ul selected="search" then use jQuery to deal with it
+<script>  
+jQuery(document).ready(function() 
+{  
+	var section = "$content.section";
+	jQuery(".section" + section + " a").addClass("current");
+}); 
+</script>  

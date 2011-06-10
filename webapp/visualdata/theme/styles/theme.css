@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS framework
+ * (en) central stylesheet
+ * (de) zentrales Stylesheet
+ *
+ * @creator       YAML Builder V1.2 (http://builder.yaml.de)
+ * @file          my_layout.css
+ * @-yaml-minver  3.1
+ * 
+ */
+
+/* import core styles | Basis-Stylesheets einbinden */
+@import url(../yaml/core/base.css);
+
+/* import screen layout | Screen-Layout einbinden */
+@import url(screen/menu.css);
+@import url(screen/basemod_grids.css);
+@import url(screen/content.css);
+@import url(nav_vlist.css);
+@import url(tabs.css);
+@import url(../yaml/navigation/nav_shinybuttons.css);
+
+@import url("pages/results.css");
+
+h1,h2,h3,h4,h5,h6 
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    color:#f99831;
+    margin:0 0 0.25em 0;
+}
+
+h3
+{
+    color:#666666;
+    font-size: 1.2em;
+}
+.hlist ul li.selectedsection a
+{
+	color: #444;
+}
+  
+#emcontainer table
+{
+	width: 100%;
+	border: 0 none;
+	border-collapse: collapse;
+}
+
+td
+{
+  	margin: 0;
+    padding: 0;
+    vertical-align: top;
+}  
+.em-rounded {border: 1px solid #999999; padding: 5px;}
+  
+.common-info, .common-about, .common-success, .common-warning, .common-error, .common-validation {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+}
+.common-info {
+color: #00529B;
+background-color: #CCC;
+background-image: url('../../images/info.png');
+}
+
+.common-about {
+color: #000000;
+background-color: #F3F3F3;
+
+}
+
+
+.common-success {
+color: #4F8A10;
+background-color: #DFF2BF;
+background-image:url('../../images/validgreen.png');
+}
+.common-warning {
+color: #9F6000;
+background-color: #FEEFB3;
+background-image: url('../../images/attention.png');
+}
+.common-error {
+color: #D8000C;
+background-color: #FFBABA;
+background-image: url('../../images/cancel.png');
+}
+
+  
+
+#emcontainer #emdropdown {
+    background: url("../images/buttons/emdropdownbutton.png") no-repeat scroll right top;
+    background-color: transparent;
+    margin-right: 0px;
+    min-width: 40px;
+}
+#emcontainer #emdropdown .emvalue {
+    color: #633108;
+    height: 17px;
+    padding: 0px 8px;
+}
+
+#emdropdowndiv {
+    background-color: white;
+    border: 1px solid #222222;
+    min-width: 250px;
+    position: absolute;
+    z-index: 600;
+}
+#emdropdowndiv {
+	padding-top: 20px;
+    background-color: transparent;
+ 	border: 0px;
+    min-width: 150px;
+}
+
+#emcontainer .emnavigateboxes {
+    padding-bottom: 5px;
+    text-align: right;
+}
+
+#emcontainer #emselectable table.emdownloadlisting
+{
+
+	border-left: solid 1px #999999;
+	border-right: solid 1px #999999;
+	border-bottom: solid 1px #999999;
+}
+
+.textlink 
+{
+	padding: 5px;
+}
+.textlink a
+{
+	text-decoration: none;
+}
+.textlink a span
+{
+	padding-left: 5px;
+}
+.textlink a:hover span
+{
+		text-decoration: underline;
+}
+.textlink img
+{
+	padding-left: 10px;
+	vertical-align: bottom;
+}
+.em-rounded
+{
+	border-radius: 6px 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.emactionheader
+{
+	width: 100%;
+	border-top-right-radius: 6px 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-right-radius: 6px;
+
+	border-top-left-radius: 6px 6px;
+	-moz-border-radius-topleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+	
+	border-left: solid 1px #999999;
+	border-right: solid 1px #999999;
+	border-top: solid 1px #999999;
+    background: #fab254 url("../images/backgrounds/gradientheader.png") repeat-x scroll right top;
+}
+#emcontainer .emdatafield
+{
+	
+	vertical-align: top;
+}
+
+#emcontainer .emdropshadow
+{
+box-shadow:5px 5px 15px #000;
+-webkit-box-shadow:5px 5px 15px #000;
+-moz-box-shadow: 5px 5px 15px #000;
+margin: 0 20px 20px 0px;
+}
+
+#emcontainer #emcontent .selectedfolder A 
+{
+	font-weight: bold;
+	background-image: url("../images/navigation/folderopen.png");
+}
+#emcontainer .folderlink 
+{
+	padding: 5px;
+	margin-left: 10px;
+}	
+#emcontainer .folderlink A
+{
+	display:block;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-image: url("../images/navigation/folderclosed.png");
+	line-height: 16px;
+}
+#emcontainer .folderlink A span
+{
+	padding-left: 20px;
+}
+#emcontainer .folderlink A:hover span
+{
+	text-decoration: underline;
+}

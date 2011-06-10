@@ -1,0 +1,52 @@
+<table class="footerholder" id="appcontainer" >
+<tr>
+<td id="appheaderleft"></td>
+<td id="appheader"> 
+  <div id="topnav" role="contentinfo">
+    <div class="header_margins">
+      <div >
+         <a href="$home$apphome/index.html"><img src="$home$apphome/theme/images/logo.png"/></a>
+        <span class="navlinks">
+  		 #if($user)
+        <!-- end: skip link navigation -->Welcome $user  <a href="$home$apphome/authentication/logout.html">Logout</a> | 
+       	<a href="$home$apphome/views/settings/index.html">Settings</a>
+        #else
+       <a href="$home$apphome/authentication/logon.html">Logon</a>
+        #end
+        </span>    
+      </div>
+    </div>
+  </div>
+
+  <div id="nav" role="navigation">
+       <div id="menu">
+        <div class="hlist" >
+         $pages.include("$apphome/theme/layouts/nav.html")
+        </div>
+       </div>
+  </div>
+  </div>
+</td>
+<td id="appheaderright"></td>
+</tr>
+<td id="appcontentleft"></td>
+<td id="appcontent" rowspan="2"> 
+  <div class="page_margins" >
+    <div id="emcontainer"  >
+	    <div id="emcontent">
+	      <div id="main" >
+	         $pages.includeContent()
+	      </div>
+	    </div>
+    </div>
+  </div>
+</div>
+</td>
+<td id="appcontentright"></td>
+</tr>
+<tr>
+<td id="appbottomleft"><img src="$themeprefix/images/bgfooterleft.png" /></td>
+<td id="appbottomright"><img src="$themeprefix/images/bgfooterright.png" /></td>
+
+</tr>
+</table>  

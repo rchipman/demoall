@@ -1,0 +1,17 @@
+#set ($link = $mediaarchive.asLinkToPreview($asset.sourcepath))
+#set($indexOf = $hits.indexOf($asset.catalogid, $asset.id))
+
+<table class="emplayerbox">
+<tr>
+<td valign="top"  >
+	#set( $type = $mediaarchive.getMediaRenderType($asset.fileFormat))
+
+	<h2>	
+	$asset
+	</h2>
+	$pages.include("$apphome/components/mediaviewer/player/types/${type}.html",$context)
+	<div class="emviewercaption">$!asset.caption</div>
+	
+</td>
+</tr>
+</table>

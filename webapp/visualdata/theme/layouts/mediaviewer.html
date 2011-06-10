@@ -1,0 +1,118 @@
+$context.putPageValue("showhover", "false")
+$context.putPageValue("thumbsize", "thumb")
+$context.putPageValue("showcaption", "true")
+
+<ul class="embuttons">
+<li>
+	<a href="$home$apphome/views/activity/downloadassets.html?sourcepath=$asset.sourcepath"><span>Download</span></a>
+</li>
+<li>
+	<a href="$home$apphome/views/activity/emailassets.html?sourcepath=$asset.sourcepath"><span>Email</span></a>
+</li>
+<li>
+	<a href="$home$apphome/views/activity/publishassets.html?sourcepath=$asset.sourcepath"><span>Export</span></a>
+</li>
+<li>
+	<a href="$home$apphome/views/activity/delete.html?sourcepath=$asset.sourcepath"><span>Delete</span></a>
+</li>
+<li>
+	$pages.include("$apphome/components/albums/basket/toggleitem.html?assetid=$asset.id?")
+</li>
+
+
+</ul>
+
+
+
+<div class="subcolumns" class="em-rounded"  style="border: 1px solid #000; padding: 5px;">
+  <div class="c60l">
+    <div class="subcl">
+
+#if( $asset )
+  $pages.include("/${applicationid}/components/mediaviewer/player/index.html",$context)
+
+#end
+   </div>
+  </div>
+  <div class="c40r">
+    <div class="subcr">
+      <h2>Asset Details</h2>            
+          
+#set($views = $searcherManager.getList("$catalogid", "assettype/views"))
+#set($searcher = $mediaarchive.getAssetSearcher())
+
+#set ($isediting = ($context.getRequestParameter("edit") == "true") )
+
+#if($asset.assettype && $asset.assettype.length() == 0)
+<div class="common-warning">
+Asset Type Not Defined
+</div>
+#end
+#if ($caneditasset && $isediting == true)
+	#set ($detaileditsuffix = "")
+<form method="post" action="$home$apphome/views/assets/save.html">
+	<input type="hidden" name="catalogid" value="$searcher.catalogId"/>
+	<input type="hidden" name="sourcepath" value="${asset.sourcepath}"/>
+	<input type="hidden" name="save" value="true"/>	
+	<input type="hidden" name="id" value="$asset.id"/>
+	<input type="hidden" name="assettype" value="$asset.assettype"/>
+#else
+	#set ($detaileditsuffix = "?detailsreadonly=true")
+#end
+      
+#foreach( $target in $views)
+<h3>$target</h3>
+$context.putPageValue("searcher", $searcher)  
+#if($asset.assettype && $asset.assettype.length() > 0)
+$context.putPageValue("view", "asset/assettype/$asset.assettype/$target.id")
+#else
+
+$context.putPageValue("view", "assettype/default/$target.id")
+
+#end 
+$context.putPageValue("data", $asset)
+
+$pages.include("$apphome/components/xml/detaileditor.html$detaileditsuffix", $context)
+#end
+<br/>
+
+#if ($isediting == true)
+<p>
+	<input type="submit" value="Save"/>
+</p>
+
+</form>
+#end
+#if( $caneditasset )
+<ul class="embuttons">
+<li>
+	#if ($isediting)
+		
+	#else
+		<a href="$home$apphome/views/assets/index.html?sourcepath=${asset.sourcepath}&edit=true"><span>Edit</span></a>
+	#end
+</li>	
+</ul>
+#end	
+
+
+
+<div class="emdetailsbox">
+#if( $asset.assetaddeddate )
+[[Added:]]	<span class="emdetaildate">$!context.getDate($asset.assetaddeddate)</span>
+#end
+
+#if( $canviewviews )
+#set( $views = $mediaarchive.getAssetStatsManager().getViewsForAsset($asset))
+<span class="emdetailviews">
+#if( $views > 0 )
+[[has]] <a href="$home$apphome/components/mediaviewer/views/index.html?foldername=/${asset.catalogid}/assetpreviewLog&field=sourcepath&sourcepath.value=$asset.sourcepath&operation=exact">$views views</a>
+#end
+</span>
+#end
+
+	</div>
+	</div>
+</div>
+
+</div>

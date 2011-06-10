@@ -1,0 +1,26 @@
+ 
+ <ul >
+
+ ##<li ><a  href="$home$apphome/index.html"><span>Activity</span></a></li>
+#if($user)
+
+##if( $canviewassets )
+<li ><a href="$home$apphome/views/categories/index.html"><span>Assets</span></a></li>
+##end
+
+##if( $canviewupload )
+ <li ><a href="$home$apphome/views/upload/index.html"><span>Upload</span></a></li>
+##end
+
+##if( $canviewassets )
+<li id="hmenulast" class="sectionbasket">
+<div id="basketmenu" class="emmenuitem">
+$pages.include("$apphome/components/albums/basket/menuitem.html")
+</div> 
+</li>
+##end
+
+#end
+
+
+ </ul>

@@ -1,0 +1,36 @@
+ <ul class="hlist">
+
+#set( $section = $content.section )
+#set( $selected = "class='selectedsection'" )
+
+#if($user)
+ <li #if($section=="home")$selected#end ><a  href="$home$apphome/index.html">Home</a></li>
+
+#if( $canviewassets )
+<li #if($section=="assets")$selected#end><a href="$home$apphome/views/categories/index.html">Assets</a></li>
+
+<li #if($section=="basket")$selected#end>
+<div id="basketmenu" class="emmenuitem">
+$pages.include("$apphome/components/albums/basket/menuitem.html")
+</div> 
+</li>
+#end
+
+#if( $canviewupload )
+ <li #if($section=="upload")$selected#end><a href="$home$apphome/views/upload/index.html">Upload</a></li>
+#end
+
+#if( $canvieworders )
+<li #if($section=="activity")$selected#end>
+<a href="$home$apphome/views/activity/listorders.html">Orders</a>
+</li>
+#end
+
+#if($canviewsettings)
+<li #if($section=="settings")$selected#end>
+	<a href="$home$apphome/views/settings/settingsgroup/index.html">Settings</a>
+	</li>
+	#end
+#end
+ </ul>
+  

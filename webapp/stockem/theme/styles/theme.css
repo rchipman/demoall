@@ -1,0 +1,404 @@
+body {font-family:Arial, Helvetica, sans-serif; color:#000000; font-size:12px; height: 100%;}
+#embody {background:#000 url(../images/body-bk.jpg)  no-repeat top center;}
+img {border-style:none;}
+html, body {margin:0;}
+html {height: 100%; margin-bottom: 1px; }
+
+h1 {margin:0; font-size:16px;}
+h2 {font-size:14px;}
+h3 {}
+
+#emcontainer #emcontentcontent
+{
+	padding: 10px;
+}
+
+/* common */
+
+#outer-container {width:1024px; margin-left:auto; margin-right:auto; text-align:left;}
+
+/* home */
+
+
+
+/* header */
+
+/* #header-container {width:1024px; height:136px;} */
+#header-container {width:1024px; height:50px;} 
+
+
+
+/* menu */
+
+#emcontainer #emtopmenu {width:1024px; height:29px; background:url(../images/menu-bk.gif) repeat-x top;}
+#emcontainer #emtopmenu .search-box {display:block; float:right; height:21px; padding:4px; color:#fff;}
+#emcontainer #emtopmenu a {display:block; float:left; height:21px; padding:8px 10px 0 10px; color:#fff; text-transform:uppercase; text-decoration:none; font-weight:bold;}
+#emcontainer #emtopmenu a:hover, #emcontainer #emtopmenu a.menu-on {background:url(../images/menu-on.gif) repeat-x top;}
+#emcontainer #quicksearch { font-weight: bold; color: white;}
+
+
+/*********************************
+	Content headers
+*********************************/
+#emcontainer .emsidecontent
+{
+	padding:8px 8px 8px 8px;
+}
+
+#emcontainer #emsidecontentheader
+{
+	background-color: #dadada;
+	background: white url(../images/backgrounds/bkgd_bar2.png) repeat-x center;
+	color: white;
+	padding: 2px 4px 1px 4px;
+}
+#emcontainer  #emsidecontentheader a
+{
+	text-decoration: none;
+	font-size: 13px; 
+	color: #FFFFFF;  
+	display: block;
+}
+#emcontainer .emsidecontentbody
+{
+	margin:0px;
+	border: 1px solid #dadada;
+	background: transparent url(../images/layout/sidebox_bggradient.gif) repeat-x;
+}
+#emcontainer #showbrowser .emsidecontentbodyinner
+{
+	padding: 0px;
+}
+#emcontainer #emactions
+{
+	padding:4px;
+	list-style-type: none; padding-left: 0;
+	margin-left: 0;
+   	text-decoration: none;
+}
+#emcontainer #emactions A 
+{
+	text-decoration: none;
+	display: block;
+	padding: 1px 4px 1px 8px;
+	white-space:nowrap; 
+	color: #68323b;
+}
+#emcontainer #emactions A:hover 
+{
+   	background-color: #c1c9b0;
+   	white-space:nowrap; 
+}
+
+#emcontainer #emactionsselected
+{
+	margin:  0px;   	
+	list-style-type: none;    
+   	text-decoration: none;
+   	background-color: #c1c9b0;
+   	padding: 2px 2px 2px 2px;
+}
+#emcontainer #emactionsselected A
+{
+	text-decoration: none;
+	white-space:nowrap; 
+}
+
+
+/* content */
+
+#content-container {color:#111;width:1024px; min-height:600px; margin-top:7px;}
+#content-container a{color:#111;}
+/* footer */
+
+#footer {width:1024px; margin:0 20px; margin-left:auto; margin-right:auto; text-align:left;}
+#footer, #footer a {color:#5d5a5a; font-size:10px; text-decoration:none;}
+
+
+p
+{
+	margin-bottom: 10px;
+}
+#emcontainer 
+{
+	color: #555;
+	padding-top: 50px;
+}
+#emdialog #emcontainer 
+{
+	background-color: white;
+	height: 100%;
+	padding: 25px 35px 0px 45px;
+}
+
+#emdialog #emcontainer .embox 
+{
+	min-height: 490px;
+}
+#emcontainer #emcontent
+{
+	min-width: 850px;
+	max-width: 1024px; 
+	margin: 0px auto;
+	height: 100%;
+}
+
+#emcontainer #emcontentinner
+{
+	background-color: white;
+	padding-top: 7px;
+	width: 100%;
+	height: 450px;
+}
+
+#emcontainer .embox
+{
+ 	padding: 0px 10px 5px 10px;
+}
+
+#emcontainer .embutton
+{
+ background:  url(../images/buttons/button.png) no-repeat center center #080808;
+ text-align:center;
+ vertical-align: middle;
+ min-width: 75px;
+ height: 28px;
+ border: 0px;
+ color: white;
+ font-weight: bold;
+ padding: 0px 4px 0px 4px;
+ margin: 0px
+}
+
+#emcontainer a {text-decoration: none;  color: #61b6bb;}
+#emcontainer a, #emcontainer a:visited { color: #61b6bb;}
+#emcontainer a:hover {text-decoration: underline; color: #61b6bb;}
+
+
+#emcontainer .embutton a
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	display: block;
+ 	padding-top: 10px;
+ 	color: #61b6bb;
+}
+
+#emcontainer #emtopmenu
+{
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#emcontainer #emtopmenuactions
+{
+	padding-top: 4px;
+	text-align: right;
+	padding-right: 10px;
+}
+#emcontainer #emtopmenuactions img
+{
+	 vertical-align: top;
+	 padding-right: 4px;
+}
+
+#emcontainer #emlargearea
+{
+	margin-bottom: 10px;
+}
+#emcontainer #emlargearea .embox
+{
+ 	padding: 5px 30px 30px 30px;
+}
+#emcontainer h1
+{
+  line-height: 1.2em;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #61b6bb;
+  padding:0px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  margin-left: 0px;
+}
+#emcontainer h2
+{
+  line-height: 1.1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding:0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#emcontainer #emsecureshare table
+{	
+	width: 100%;
+}
+#emcontainer #emsecureshare th
+{
+	text-align:right;
+	vertical-align: top;
+	padding: 10px;
+}
+#emcontainer #emsecureshare td
+{
+	padding: 10px;
+}
+
+#emcontainer .oetableleft
+{
+	text-align:right;
+	white-space:nowrap;
+	padding-right: 6px;
+}
+#emcontainer .oepropertiestable td
+{
+	height: 27px;
+	vertical-align: middle;
+}
+
+#emcontainer .oetableright input
+{
+	width: 150px;
+}
+#emcontainer #emlogin .embox
+{
+	min-height: 300px;
+}
+#emcontainer #emregister .embox
+{
+	min-height: 300px;
+}
+#emcontainer #emregister .emactions
+{
+	padding-top: 10px;
+	text-align: right;
+}
+#emcontainer #emlogin .emactions
+{
+	padding-top: 80px;
+	padding-right: 30px;
+	text-align: right;
+}
+#emcontainer #emlogin .oetableright input
+{
+	width: 200px;
+}
+
+
+/**
+ * Spanky Corners -- CSS Rounded Corners by SitePoint
+ *
+ * Auto generated code
+ * Details @ http://tools.sitepoint.com/spanky/
+ * @version 1.1b
+ */
+
+#emcontainer #emdropdown
+{
+	background: #ffffff url(../images/backgrounds/dropdown_bg.gif) no-repeat top right;
+	margin-right:14px;
+	position: relative;
+	height: 20px;
+	min-width: 80px;
+	cursor: pointer;
+}
+#emcontainer #emdropdown .emvalue
+{
+	color: black;
+	height: 13px;
+	overflow: hidden;
+	margin-right: 22px;
+	padding: 2px;
+}
+
+#emdropdowndiv
+{
+	position:absolute;
+	z-Index:600;
+	position:absolute;
+	background-color: white;
+	border: 1px solid #222222;
+	display: hidden;
+	width: 250px;
+}
+
+#emcontainer .emresultsheader 
+{
+	width: 100%;
+	padding-left: 20px;
+}
+
+#emcontainer .emresultsheader td
+{
+	padding: 0px 10px 10px 0px;
+	white-space:nowrap;
+}
+
+#emcategoryinline
+{
+	height: 600px;
+	overflow:scroll;
+}
+
+#emcategoryinlineinner
+{
+	padding-top: 5px;
+}
+
+#emcategoryinline .emtreehover
+{
+	background-color: #E0E0E0;
+}
+#emcategoryinline .treerow a
+{
+	min-width: 50px;
+}
+
+#emcategoryinline .treerowtext
+{
+	padding-bottom: 4px;
+}
+
+#emcategoryinline .dtree {
+	white-space: nowrap;
+}
+#emcategoryinline .dtree img {
+	border: 0px;
+	vertical-align: top;
+}
+#emcategoryinline .dtree a 
+{
+	color: #444444;
+	font-size: 12px;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+#emcategoryinline .dTreeNodeSel
+{
+	background-color: #C0D2EC;
+	
+}
+
+#emcontainer .emthumbboxtext
+{
+	height: 12px;
+}
+
+#emcontainer .striped { border: 2px solid #E0E0E0; }
+#emcontainer .striped  th { padding: 4px; text-align: left; font-weight: bold; }
+#emcontainer .striped  tr {	border-bottom: 1px solid #999999;   }
+#emcontainer .striped  tr td {	padding: 4px;   }
+#emcontainer .odd { background-color: #E0E0E0; }
+
+
+#emcontainer #emselectable table { border: 2px solid #E0E0E0; }
+#emcontainer #emselectable table th { padding: 4px; text-align: left; font-weight: bold; }
+
+#emcontainer #emselectable table tr {	cursor:pointer; border-bottom: 1px solid #999999;   }
+#emcontainer #emselectable table tr td {	padding: 4px;   }
+#emcontainer #emselectable table tr.emhighlight {	cursor:pointer; background: #ff6; }
+#emcontainer #emselectable table tr.emborderhover {	 background: #eeeeee;   }
+
+#emcontainer #emselectable .emselectabledetails { padding-left: 20px; }

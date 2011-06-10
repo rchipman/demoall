@@ -1,0 +1,6 @@
+<page>
+	<path-action name="AssetEditModule.getAsset" />
+	<path-action name="Script.run">
+		<script>/${catalogid}/events/scripts/publishing/smartjogpublish.groovy</script>
+	</path-action>
+</page>

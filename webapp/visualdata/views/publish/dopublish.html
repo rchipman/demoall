@@ -1,0 +1,6 @@
+#set ($locationid = $context.getRequestParameter("locationid"))
+
+#set ($location = $searcherManager.getData($catalogid, "publishing/publishlocations", $locationid))
+
+The asset is being published to $location.
+<br/>

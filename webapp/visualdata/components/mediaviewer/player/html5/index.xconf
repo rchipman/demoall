@@ -1,0 +1,7 @@
+<page>
+	<page-action name="Script.run">
+		<script method="loadSecureLink">../amazon.groovy</script>
+	</page-action>
+	<property name="presetid">amazonpreview</property>
+	<property name="destinationid">4</property>
+</page>

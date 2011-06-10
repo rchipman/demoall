@@ -1,0 +1,96 @@
+<div class="footerholder">
+  <div id="topnav" role="contentinfo">
+    <div class="header_margins">
+      <div class="page">
+         <a  href="$home$apphome/index.html"><img src="$home$apphome/theme/images/visual-data-logo-dark.png"/></a>
+        <span class="navlinks">
+  		 #if($user)
+        <!-- end: skip link navigation -->Welcome $user  <a href="$home$apphome/authentication/logout.html">Logout</a> | 
+       	<a href="$home$apphome/users/$user.id/index.html">Account</a>
+        #end
+  			
+        </span>
+    
+      </div>
+    </div>
+  </div>
+
+  <div id="nav" role="navigation">
+      	<div id="menu">
+        <div class="hlist" >
+         $pages.include("$apphome/theme/layouts/nav.html")
+        
+        </div>
+       </div>
+      </div>
+    
+  
+ 
+ 
+ 
+ <div class="page_margins" >
+    <!-- start: skip link navigation -->
+    <!-- end: skip link navigation -->
+    <div id="emcontainer" class="page" >
+    <div id="emcontent">
+   
+    
+     
+      <div id="main"  style="padding-bottom: 120px;">
+   
+         $pages.includeContent()
+       
+       
+      </div>
+     
+    </div>
+    </div>
+  </div>
+ 
+
+
+</div>
+
+
+ 
+<!-- full skiplink functionality in webkit browsers -->
+
+<div id="footer" role="contentinfo">
+    <div class="header_margins">
+      <div class="page">
+   <div class="subcolumns">
+          <div class="c33l">
+            <div class="subcl">
+   <img src="$home$apphome/theme/images/visual-data-logo-dark.png" align="left"/>
+145 W. Magnolia Blvd.<br/>
+Burbank, CA. 91502<br/>
+818-558-3363
+
+
+</div>
+
+           </div>
+        
+          <div class="c33l">
+            <div class="subc">
+CONTACT | ABOUT US | PRIVACY POLICY | TERMS OF USE <br/>
+© 2010, VISUAL DATA INC. ALL RIGHTS RESERVED
+
+
+
+      
+		</div>
+		</div>
+		  <div class="c33r">
+            <div class="subcr">
+
+      
+		</div>
+            </div>
+          </div>
+   
+   
+      
+    </div></div></div>
+
+  

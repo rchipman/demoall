@@ -1,0 +1,70 @@
+<div id="topnav" role="contentinfo">
+    <div class="page_margins">
+      <div class="page">
+        <span class="navlinks">
+  		 #if($user)
+        <!-- end: skip link navigation -->Welcome $user  <a href="$home$apphome/authentication/logout.html">Logout</a> | 
+       	<a href="$home$apphome/views/settings/index.html">Settings</a>
+        #else
+       <a href="$home$apphome/authentication/logon.html">Logon</a>
+        #end
+  		
+  			
+        </span>
+     
+      </div>
+    </div>
+  </div>
+  <div id="nav" role="navigation">
+    <div class="page_margins">
+      <div class="page">
+        <div class="hlist">
+          <!-- main navigation: #nav_main -->
+         $pages.include("$apphome/theme/layouts/nav.html")
+        </div>
+      </div>
+    </div>
+  </div>
+ <div id="header" role="banner">
+    <div class="page_margins">
+      <div class="page">
+    <h1>  Enterprise Media Library</h1>
+   
+   
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 
+ 
+
+ 
+
+  <div id="main">
+    <div class="page_margins">
+      <div class="page">
+       $pages.includeContent()
+      </div>
+    </div>
+  </div>
+
+  <div id="extended">
+    <div class="page_margins">
+      <div class="page">
+        EML
+      </div>
+    </div>
+  </div>
+  <!-- begin: #footer -->
+  <div id="footer" role="contentinfo">
+    <div class="page_margins">
+      <div class="page">
+     <p>EML</p>
+      </div>
+    </div>
+  </div>
+<!-- full skiplink functionality in webkit browsers -->
+
+
+

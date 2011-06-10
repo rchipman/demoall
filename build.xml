@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="default" name="demoall">
+
+  <target name="default" depends="clean, update-dependencies, war"/>
+    <target name="dependency" depends="default"/>
+    
+	<property name="appname" value="${ant.project.name}"/>
+	<property name="org" value="EnterMediaSoftware.com"/>
+	<property name="lib" location="${basedir}/lib"/>
+	<property name="etc" location="${basedir}/etc"/>
+	<property name="build" location="${basedir}/build"/>
+	<property name="wardir" location="${build}/wartmp"/>
+	<property name="webapp" location="${basedir}/webapp"/>
+	<property name="webinf" location="${webapp}/WEB-INF"/>
+	
+	<!-- 
+		========================================================================
+		Anthill build server properties.  These properties will be passed in
+		by anthill when this script is executed on the build server.
+		
+			- "version" is set by the version adapter
+			- "deployDir" is set by anthill.publish.dir
+		========================================================================
+	--> 
+	<property name="version"  value="dev"/>
+	<property name="deployDir" value="deploy"/>
+  	<property name="report" value="${deployDir}"/>
+	
+	<!-- A convenience variable for documentation output -->
+	<property name="versionedApp" value="${appname}-${version}"/>
+
+  <target name="clean">
+     <delete dir="${build}"/>
+     <delete dir="${wardir}"/>
+  </target>
+
+  <target name="update-dependencies" depends="clean">
+    <mkdir dir="${wardir}/WEB-INF/" />
+	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/projects/entermedia-server/install.xml"/>
+	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
+  	<copy todir="${wardir}"  preservelastmodified="true">
+		<fileset dir="${webapp}">
+			<include name="WEB-INF/base/**" />
+			<include name="WEB-INF/bin/**" />
+			<include name="WEB-INF/data/system/**" />
+			<include name="WEB-INF/*.*" />
+			<include name="media/**" />
+   			<include name="emtube/**" />
+   			<include name="eml/**" />
+   			<include name="medialab/**" />
+   			<include name="entermedia/_site.xconf" />
+    		<include name="*.*" />
+		</fileset>
+   	</copy>
+  </target>
+    	
+  	<!-- 
+		========================================================================
+		Create WAR
+		========================================================================
+	-->	
+  <target name="war" >
+	<mkdir dir="${deployDir}/builds" />
+	<war warfile="${deployDir}/builds/${versionedApp}.war" webxml="${webinf}/web.xml" basedir="${wardir}"
+		excludes="WEB-INF/base/archive/**,WEB-INF/base/store/**,WEB-INF/base/search/**,entermedia/catalogs/**">
+  		<manifest>
+	    	<attribute name="Built-By" value="${user.name}"/>
+		    <attribute name="Implementation-Title" value="${appname}"/>
+		    <attribute name="Implementation-Version" value="${version}"/>
+		    <attribute name="Implementation-Vendor" value="${org}"/>
+	    </manifest>
+	  </war>
+
+ 	<move overwrite="true" file="${deployDir}/builds/${versionedApp}.war" 
+        tofile="${deployDir}/ROOT.war"/>
+  	
+  </target>
+
+</project>

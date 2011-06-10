@@ -1,0 +1,49 @@
+$!request.getAttribute( "oe-exception")
+<h2>Login</h2>
+	#if($user)
+		[[You are logged in as]] $user		
+	#else
+		#set($loginok = $context.getRequestParameter("loginokpage"))
+		##if( !$loginok )
+		 ##set( $loginok = $apphome )
+		##end 
+		<form name="login" action="$home$page.getDirectory()/login.html" method="POST" onsubmit="return confirmPassword(this);">
+			<input type="hidden" name="loginokpage" value="$!loginok"/>
+			<table class="oepropertiestable"><tr><td class="oetableleft">[[Email or Username]]:</td><td class="oetableright"><INPUT id="accountname" name="accountname"  /> </td>
+			</tr><tr>
+			<td class="oetableleft">[[Password]]:</td><td class="oetableright"><INPUT name="password" type="password"  /> </td>
+			</tr></table>
+			#if ( $context.getPageValue("oe-exception") )
+				<div style="border: 1px solid black; width: 60%; text-align: center">$context.getPageValue("oe-exception")</div>
+				$context.removePageValue("oe-exception")
+			#end
+
+		<p><a href="./sendpassword.html">[[Forgot Password]]</a></p>
+
+			<div class="emactions">			
+			<INPUT name="submit" type="submit" value="[[Login]]" class="embutton" /> 
+			</div>
+		</form>
+	#end
+
+
+	<script language="JavaScript" >
+
+	jQuery(document).ready(function() 
+	{ 
+		document.getElementById("accountname" ).focus();
+	});
+	function confirmPassword(form)
+	{
+		if(form.password.value=="")
+		{
+			alert("[[Please enter your password]]");
+			form.password.focus();
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	</script> 
