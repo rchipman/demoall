@@ -6,14 +6,31 @@
 	<classpathentry kind="src" path="webapp/WEB-INF/base/entermedia/catalog/model"/>
 	<classpathentry kind="src" path="webapp/WEB-INF/base/entermedia/catalog/events/scripts"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/openedit"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-ooffice"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-cumulus"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/sundial"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/workmonger"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-aspera"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-eml"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-emtube"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-loudmouth"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-medialab"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-mediamoneymaker"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-scout"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-sundial"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-visualdata"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-workmonger"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/client-rest-java"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-aspera"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-cumulus"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-elasticsearch"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-episode"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-fatwire"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-ooffice"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-openedit"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-rhozet"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-smartjog"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-sql"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-uploader"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-webdav"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/resin3.x"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
