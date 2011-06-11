@@ -22,7 +22,9 @@
 			- "deployDir" is set by anthill.publish.dir
 		========================================================================
 	--> 
-	<property name="version"  value="dev"/>
+	<property environment="env" />
+
+	<property name="version"  value="7.${env.BUILD_NUMBER}"/>
 	<property name="deployDir" value="deploy"/>
   	<property name="report" value="${deployDir}"/>
 	
@@ -36,7 +38,7 @@
 
   <target name="update-dependencies" depends="clean">
     <mkdir dir="${wardir}/WEB-INF/" />
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/projects/entermedia-server/install.xml"/>
+	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
   	<copy todir="${wardir}"  preservelastmodified="true">
 		<fileset dir="${webapp}">
