@@ -1,6 +1,0 @@
-<page>
-
-	<property name="categoryid">index</property>
-	<path-action name="MediaSearchModule.searchCategories"/>
-	
-</page>
