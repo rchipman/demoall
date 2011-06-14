@@ -2,7 +2,14 @@
 <query>
   <catalogs>
     <catalog id="media/catalogs/public"/>
+    <catalog id="media/catalogs/video"/>
+    <catalog id="media/catalogs/client1"/>
+    <catalog id="media/catalogs/client2"/>
   </catalogs>
-  <term id="description" val="*" op="matches"/>
-  <inputs/>
+  <term id="description" val="test" op="startswith" catalogid="media/catalogs/public" searchtype="asset"/>
+  <inputs>
+    <input key="description_0">
+      <value>test</value>
+    </input>
+  </inputs>
 </query>
