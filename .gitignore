@@ -1,3 +1,8 @@
 build/
 bin/
-webapp/WEB-INF/data/media
+webapp/WEB-INF/data/media/
+webapp/WEB-INF/base/
+webapp/WEB-INF/logs/
+webapp/WEB-INF/data/system/
+webapp/emtube/
+webapp/media/catalogs/
