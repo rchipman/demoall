@@ -1,8 +1,11 @@
 build/
 bin/
 webapp/WEB-INF/data/media/
-webapp/WEB-INF/base/
 webapp/WEB-INF/logs/
-webapp/WEB-INF/data/system/
-webapp/emtube/
+webapp/WEB-INF/classes/
+webapp/WEB-INF/tmp/
+webapp/WEB-INF/data/eml/
+webapp/WEB-INF/data/medialab/
+webapp/WEB-INF/data/visualdata/
 webapp/media/catalogs/
+
