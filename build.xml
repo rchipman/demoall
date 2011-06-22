@@ -67,10 +67,6 @@
 		</fileset>
    	</copy>
 
-
-		
-  	//pull in eml, medialab, emtube apps?
-  	
   </target>
     	
   	<!-- 
