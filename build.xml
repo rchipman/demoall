@@ -44,13 +44,13 @@
   	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/app-eml/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
-<!--
+
 	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/app-emtube/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
 	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/app-medialab/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
--->	
+	
 	<!-- Add tracker, loudmouth moneymaker etc -->
   	<copy todir="${wardir}"  preservelastmodified="true">
 		<fileset dir="${webapp}">
