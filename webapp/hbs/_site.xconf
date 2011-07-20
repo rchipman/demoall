@@ -28,6 +28,7 @@
 	<style 	id="layout" href="${themeprefix}/styles/layout.css" />
 	<style 	id="content" href="${themeprefix}/styles/content.css" />
 	<style 	id="app-css" href="${themeprefix}/styles/theme.css" />
+	<style  id="assetpermissions" href="${themeprefix}/styles/pages/permissions.css" />
 	
 	<script id="jquery" src="/${applicationid}/components/javascript/jquery-1.6.1.js" />
 	<script id="jquery-ui" src="/${applicationid}/components/javascript/jquery-ui-1.8.12.custom.min.js" />
