@@ -1,5 +1,0 @@
-<page>
-
-<page-action name="MediaSearchModule.searchFavories" />
-<page-action name="UserProfileModule.loadOwner"/>
-</page>

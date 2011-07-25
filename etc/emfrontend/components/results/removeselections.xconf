@@ -1,6 +1,0 @@
-<page>
-	<path-action name="AlbumModule.removeSelections"/>
-	<property name="albumid">4</property>
-	<inner-layout/>
-	<layout/>
-</page>

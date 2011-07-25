@@ -28,6 +28,7 @@
 	<style 	id="layout" href="${themeprefix}/styles/layout.css" />
 	<style 	id="content" href="${themeprefix}/styles/content.css" />
 	<style 	id="app-css" href="${themeprefix}/styles/theme.css" />
+	<style  id="assetpermissions" href="${themeprefix}/styles/pages/permissions.css" />
 	
 	<script id="jquery" src="/${applicationid}/components/javascript/jquery-1.6.1.js" />
 	<script id="jquery-ui" src="/${applicationid}/components/javascript/jquery-ui-1.8.12.custom.min.js" />
@@ -36,7 +37,6 @@
 	<script id="jquery-prettycomments" src="/${applicationid}/components/javascript/prettycomments.js"/>
 	<script id="jquery-form" src="/${applicationid}/components/javascript/jquery.form.js" />
 	<script id="jquery-livequery" src="/${applicationid}/components/javascript/jquery.livequery.js" />
-	<script id="jquery-autocomplete" src="/${applicationid}/components/javascript/jquery.autocomplete.js"/>
 	<script id="jquery-validate"  src="/${applicationid}/components/javascript/jquery.validate.js"/>
 	<script id="jquery-select"  src="/${applicationid}/components/javascript/ui.selectmenu.js"/>
 	<script id="entermedia" src="/${applicationid}/components/javascript/entermedia.js"/>
