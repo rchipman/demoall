@@ -48,6 +48,9 @@
 	<permission name="shareasset">
 		<user />
 	</permission>
+	<permission name="viewvoting">
+		<boolean value="false" />
+	</permission>
 	
 	
 </page>
