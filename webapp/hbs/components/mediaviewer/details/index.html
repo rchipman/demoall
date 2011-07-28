@@ -1,0 +1,60 @@
+<div id="emdataeditor" class="emdetailsbox" >
+
+	<div  class="emviewercaption">$!asset.caption</div>
+
+	$asset
+
+	#if( $asset.getKeywords().size() > 0  )
+	has keywords of
+		#foreach ($tag in $asset.keywords)
+			$tag
+		#end
+	#end
+	#if( $asset.getCategories().size() > 0 )	
+	in folders	
+		#foreach ($category in $asset.categories) 
+			$category.name
+		#end
+	#end
+
+#if( $asset.assetaddeddate )
+[[was uploaded on]]
+<span class="emdetaildate">$!context.getDate($asset.assetaddeddate)</span>
+#end
+
+#if( $asset.owner )
+[[by]]($asset.owner)
+#end
+
+#set( $views = $mediaarchive.getAssetStatsManager().getViewsForAsset($asset))
+<span class="emdetailviews">
+#if( $views > 0 )
+[[currently has]] $views views
+#end
+</span>
+
+	<ul class="emdetailactions">
+#if( $cansocialshare )
+		<a class="emdialog" href="$home$apphome/components/share/social.html?sourcepath=$asset.sourcepath&categoryid=$!category.id&width=850&height=600"><li class="emdetailfacebook  uibutton"><img src="$home$themeprefix/images/buttons/facebooksm.png" alt="Share with social media sites"> Social Media</li></a>
+#end
+#if( $canshareasset )
+		<a class="emdialog" href="$home$apphome/components/share/permissions.html?sourcepath=$asset.sourcepath&categoryid=$!category.id&width=700&height=650"><li class="emdetailfacebook  uibutton"><img src="$home$themeprefix/images/navigation/user-group.png" alt="Share Settings">   Permissions</a></li>
+#end
+		<a class="emdialog" href="$home$apphome/components/share/embed.html?sourcepath=$asset.sourcepath&width=300&height=200"><li class="emdetailfacebook  uibutton"><img src="$home$themeprefix/images/navigation/link.png" /> [[Embed]]</li></a>
+#if( $canemaillink )
+		<a class="emdialog " href="$home$apphome/components/share/secureshare.html?sourcepath=$asset.sourcepath&categoryid=$!category.id&width=800&height=550"><li class="emdetailfacebook  uibutton"><img src="$home$themeprefix/images/buttons/email.png" /> Email</li></a>
+#end
+#if( $candownload )
+		<a href="$home$mediaarchive.asLinkToOriginal($asset)"><li class="emdetailfacebook  uibutton"><img src="$home$themeprefix/images/buttons/download.png" /> Download</li></a>
+#end
+#if( $canviewsettings )
+		<a class="ajax" targetdiv="emdataeditor" href="$home$apphome/components/mediaviewer/details/metadataedit.html?sourcepath=$asset.sourcepath&hitssessionid=$hits.sessionId&edit=true&oemaxlevel=1"><li class="emdetaileditasset  uibutton"> <img src="$home$themeprefix/images/navigation/info.png" />[[Edit]]</li></a>
+#end	
+#if( $canviewvoting )			
+<li class="emdetaileditasset  uibutton">
+		$pages.include("$apphome/components/voting/index.html?catalogid=$catalogid&sourcepath=$asset.sourcepath", $context)
+</li>
+#end
+	</ul>
+
+</div>
