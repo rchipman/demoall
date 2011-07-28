@@ -51,6 +51,10 @@
 	<permission name="viewvoting">
 		<boolean value="false" />
 	</permission>
+	<permission name="download">
+		<boolean value="false" />
+	</permission>
+	
 	
 	
 </page>
