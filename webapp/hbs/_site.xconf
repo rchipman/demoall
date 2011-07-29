@@ -14,7 +14,8 @@
   <property name="mastergroup">video</property>
   	<property name="showaddselections">true</property>
 	<property name="showremoveselections">false</property>
-  <property name="section" >activity</property>
+  <property name="section" >home</property>
+  <!--<property name="section" >activity</property>-->
   <!-- 
   <property name="contentsiteroot">http://s3.amazonaws.com/emtube</property 
   -->
