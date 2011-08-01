@@ -55,6 +55,9 @@
 	<permission name="download">
 		<boolean value="false" />
 	</permission>
+	<permission name="emaillink">
+		<boolean value="true" />
+	</permission>
 	
 	
 	
