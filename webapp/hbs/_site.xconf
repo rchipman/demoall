@@ -56,7 +56,7 @@
 		<boolean value="false" />
 	</permission>
 	<permission name="emaillink">
-		<boolean value="true" />
+		<boolean value="false" />
 	</permission>
 	
 	
