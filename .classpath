@@ -23,5 +23,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/extension-uploader"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/resin3.x"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-elasticsearch"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
