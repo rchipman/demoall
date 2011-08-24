@@ -1,8 +1,10 @@
-<node id="singlenode" name="Default Single Node">
+<node id="cburkeynode" name="Default Single Node">
 
-    <property id="cluster.name">entermediadev</property>
-     <property id="gateway.type">fs</property>
-     <property id="gateway.fs.location">./data/elastic/gateway</property>
+    <property id="cluster.name">entermediacburkey</property>
+
+     <property id="index.mapping._id.indexed">true</property>
+
+     <property id="gateway.fs.snapshot_lock">false</property>
      <!-- 
      <property name="index.store.type">mmapfs</property>
      <property name="index.store.fs.mmapfs.enabled">true</property>
