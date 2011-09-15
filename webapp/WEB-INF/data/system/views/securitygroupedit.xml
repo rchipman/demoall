@@ -1,9 +1,0 @@
-<properties>
-	<property id="name"/>
-	<property id="uploadpermission" blankoption="false"/>
-	<property id="assetspermission" blankoption="false"/>
-	<property id="orderspermission" blankoption="false"/>
-	<property id="settingspermission" blankoption="false"/>
-	<property id="usermanagerpermission" blankoption="false" />
-	
-</properties>
