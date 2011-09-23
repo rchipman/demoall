@@ -3,11 +3,11 @@
 <group id="administrators">
   <group-name>Administrators</group-name>
   <properties>
-  	<property name="uploadpermission" value="full" />
+  	<property name="enabled" value="true" />
   	
   </properties>
   
-    <permissions>
+<permissions>
     <permission>viewarchive</permission>
     <permission>archive.recordedit</permission>
     <permission>matt.browse</permission>
@@ -70,9 +70,6 @@
     <permission>oe.edit.links</permission>
     <permission>archive.advancedsearch</permission>
     <permission>archive.deletesavedquery</permission>
-    <permission>oe.administration.toolbar</permission>
-     <permission>oe.edit.links</permission>
-    
   </permissions>
   
 </group>
