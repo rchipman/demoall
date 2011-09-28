@@ -1,5 +1,6 @@
 <page>
 
+	<property name="encoding">UTF-8</property>
 
   <property name="themeprefix">/themes/baseem</property>
   <inner-layout>${themeprefix}/layouts/layout.html</inner-layout>
