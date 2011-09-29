@@ -3,5 +3,7 @@
 <group id="visualdata">
   <group-name>VisualData</group-name>
   <permissions/>
-  <properties/>
+  <properties>
+    <property name="enabled" value="true"/>
+  </properties>
 </group>

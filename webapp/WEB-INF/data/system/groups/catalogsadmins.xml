@@ -2,5 +2,8 @@
 
 <group id="catalogsadmins">
   <group-name>Catalogs Admins</group-name>
-  <properties/>
+  <permissions/>
+  <properties>
+    <property name="enabled" value="true"/>
+  </properties>
 </group>

@@ -4,6 +4,7 @@
   <group-name>Uploaders</group-name>
   <permissions/>
   <properties>
-  	<property name="uploadpermission" value="full" />
+    <property name="enabled" value="true"/>
+    <property name="uploadpermission" value="full"/>
   </properties>
 </group>
