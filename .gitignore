@@ -8,4 +8,8 @@ webapp/WEB-INF/data/eml/
 webapp/WEB-INF/data/medialab/
 webapp/WEB-INF/data/visualdata/
 webapp/media/catalogs/
-
+webapp/WEB-INF/data/system/friends/
+webapp/WEB-INF/data/system/groups/index/
+webapp/WEB-INF/data/system/users/index/
+webapp/WEB-INF/oemounts.xml
+webapp/highlightslab/
