@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-<<<<<<< HEAD
-=======
 	<classpathentry kind="src" path="webapp/WEB-INF/base/emfrontend/views/search/reports"/>
 	<classpathentry kind="src" path="test"/>
->>>>>>> a67a985f70969b2642881812863e774454954e73
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/app-visualdata"/>
