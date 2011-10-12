@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." default="default" name="demoall">
+<!--branch-->
 
   <target name="default" depends="clean, update-dependencies, war"/>
     <target name="dependency" depends="default"/>

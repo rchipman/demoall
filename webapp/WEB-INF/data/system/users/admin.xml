@@ -38,8 +38,8 @@
     <property name="datalevel" value="advanced"/>
     <property name="orderingcost" value="false"/>
     <property name="openadmintoolbar" value="true"/>
-    <property name="email" value="support@openedit.org"/>
     <property name="showdebug" value="false"/>
+    <property name="email" value="don@openedit.org"/>
     <property name="showfilter" value="false"/>
     <property name="productorderingoptions" value="false"/>
     <property name="notes" value=""/>
@@ -48,9 +48,9 @@
     <property name="mailingzip" value=""/>
   </properties>
   <group id="developers"/>
-  <group id="GS"/>
-  <group id="photoeditors"/>
   <group id="video"/>
   <group id="administrators"/>
   <group id="visualdata"/>
+  <group id="photoeditors"/>
+  <group id="GS"/>
 </user>

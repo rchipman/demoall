@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<user enabled="true">
+  <user-name>aspera_vdms</user-name>
+  <password>DES:NR+Y2bSjEdr6LohpLSdSnQ==</password>
+  <creation-date>1316100397649</creation-date>
+  <properties>
+    <property name="lastName" value="aspera_vdms"/>
+    <property name="enabled" value="true"/>
+    <property name="screenname" value="aspera_vdms"/>
+    <property name="email" value="don@openedit.org"/>
+    <property name="firstName" value="aspera_vdms"/>
+  </properties>
+</user>
