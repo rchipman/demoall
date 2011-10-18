@@ -34,12 +34,12 @@
     <property name="productspecialrestrictions" value="false"/>
     <property name="searchtype" value="categories"/>
     <property name="officestate" value=""/>
-    <property name="oe.edit.mode" value="preview"/>
+    <property name="oe.edit.mode" value="editing"/>
     <property name="datalevel" value="advanced"/>
     <property name="orderingcost" value="false"/>
     <property name="openadmintoolbar" value="true"/>
-    <property name="showdebug" value="false"/>
     <property name="email" value="support@openedit.org"/>
+    <property name="showdebug" value="false"/>
     <property name="showfilter" value="false"/>
     <property name="notes" value=""/>
     <property name="productorderingoptions" value="false"/>
@@ -47,6 +47,9 @@
     <property name="mailingzip" value=""/>
     <property name="mailingstate" value=""/>
   </properties>
+  <group id="video"/>
+  <group id="developers"/>
   <group id="administrators"/>
+  <group id="photoeditors"/>
   <group id="visualdata"/>
 </user>
