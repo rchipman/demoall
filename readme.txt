@@ -1,1 +1,1 @@
-demoall -vd
+demoall -vd test
