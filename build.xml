@@ -64,6 +64,7 @@
 			<include name="media/**" />
 			<include name="eml/**" />
 			<include name="emtube/**" />
+			<include name="theme/**" />
 			<include name="medialab/**" />
    			<include name="entermedia/_site.xconf" />
     		<include name="*.*" />
