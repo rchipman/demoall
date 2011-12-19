@@ -4,7 +4,8 @@
  
 	<property name="editable">true</property>
 	<script id="jquery" src="/system/components/javascript/jquery-1.4.2.js" />
-	<script src="/system/components/openedit/openedit.js" id="openedit"/>
-	<style href="/system/components/openedit/html/theme/style.css" id="openedit-css"/>
+
+	<property name="authenticationdomain">workgroup</property>
+	<property name="authenticationserver">192.168.1.1</property>
 
 </page>
