@@ -1,6 +1,6 @@
 <page>
 	<property name="title">EnterMedia Applications</property>
-	<link id="theme" href="$home/theme/styles/theme.css" />
+	<style id="theme" href="/theme/styles/theme.css" />
 	
 	<inner-layout>/theme/layouts/layout.html</inner-layout>
 </page>
