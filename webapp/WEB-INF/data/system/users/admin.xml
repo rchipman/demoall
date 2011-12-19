@@ -47,6 +47,6 @@
     <property name="mailingzip" value=""/>
     <property name="mailingstate" value=""/>
   </properties>
-  <group id="administrators"/>
   <group id="visualdata"/>
+  <group id="administrators"/>
 </user>
