@@ -9,5 +9,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/extension-openedit"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/resin3.x"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-ooffice"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
