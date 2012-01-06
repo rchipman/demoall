@@ -47,6 +47,9 @@
 	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
+	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/extension-ooffice/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
+
 	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
