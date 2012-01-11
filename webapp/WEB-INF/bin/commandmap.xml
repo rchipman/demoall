@@ -5,14 +5,14 @@
 		<commandbase>./WEB-INF/bin/mac</commandbase>
 		<exiftoolthumb>./exiftoolthumb.sh</exiftoolthumb>
 		<asperaupload>./aspera/upload.sh</asperaupload>
-		<convert>/usr/local/Cellar/imagemagick/6.6.9-4/bin/convert</convert>
-		<ffmpeg>/usr/local/Cellar/ffmpeg/0.8/bin/ffmpeg</ffmpeg>
+		<convert>/usr/local/Cellar/imagemagick/6.7.1-1/bin/convert</convert>
+		<ffmpeg>/usr/local/Cellar/ffmpeg/0.9/bin/ffmpeg</ffmpeg>
+		<qt-faststart>./qt-faststart</qt-faststart>
 	</commandmap>
 	<commandmap os="LINUX">
 		<commandbase>./WEB-INF/bin/linux</commandbase>
 		<exiftoolthumb>./exiftoolthumb.sh</exiftoolthumb>
 		<asperaupload>./aspera/upload.sh</asperaupload>
-		
 	</commandmap>
 	<commandmap os="WINDOWS">
 		<commandbase>./WEB-INF/bin/windows</commandbase>

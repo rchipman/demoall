@@ -1,5 +1,5 @@
 build/
-bin/
+/bin/
 webapp/WEB-INF/data/media/
 webapp/WEB-INF/logs/
 webapp/WEB-INF/classes/
