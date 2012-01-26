@@ -2,12 +2,7 @@
 
 <page>
   <property name="fallbackdirectory">/WEB-INF/base/emshare</property>
-  <permission name="viewupload">
-    <user/>
-  </permission>
   <permission name="download">
-    <or>
-      <group id="administrators"/>
-    </or>
+    <pagevalue equals="true" name="caneditasset"/>
   </permission>
 </page>
