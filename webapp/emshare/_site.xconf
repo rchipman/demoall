@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+  <property name="fallbackdirectory">/WEB-INF/base/emshare</property>
+  <permission name="download">
+    <pagevalue equals="true" name="caneditasset"/>
+  </permission>
+</page>
