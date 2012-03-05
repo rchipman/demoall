@@ -4,7 +4,6 @@
   <user-name>testuser</user-name>
   <password>DES:rDpdaQNtmOQ47RMMVoR5Tg==</password>
   <creation-date>1237057734887</creation-date>
-  <lastLogined-Time>2012-02-03 11:16:17 -0500</lastLogined-Time>
   <properties>
     <property name="lastName" value="Mellow"/>
     <property name="enabled" value="true"/>
@@ -13,5 +12,6 @@
     <property name="email" value=""/>
     <property name="firstName" value="Rachel"/>
   </properties>
+  <group id="GS"/>
   <group id="guest"/>
 </user>
