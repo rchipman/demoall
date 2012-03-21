@@ -4,14 +4,14 @@
   <user-name>testuser</user-name>
   <password>DES:rDpdaQNtmOQ47RMMVoR5Tg==</password>
   <creation-date>1237057734887</creation-date>
+  <lastLogined-Time>2012-03-19 12:06:17 -0400</lastLogined-Time>
   <properties>
-    <property name="lastName" value="Mellow"/>
     <property name="enabled" value="true"/>
-    <property name="searchtype" value="categories"/>
+    <property name="lastName" value="Mellow"/>
     <property name="screenname" value="RachelM"/>
+    <property name="searchtype" value="categories"/>
     <property name="email" value=""/>
     <property name="firstName" value="Rachel"/>
   </properties>
-  <group id="GS"/>
   <group id="guest"/>
 </user>

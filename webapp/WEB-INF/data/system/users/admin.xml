@@ -4,6 +4,7 @@
   <user-name>admin</user-name>
   <password>DES:2JPGMLB8Y60=</password>
   <creation-date>1146231775645</creation-date>
+  <lastLogined-Time>2012-03-19 14:58:31 -0400</lastLogined-Time>
   <properties>
     <property name="productvpa" value="false"/>
     <property name="officecountry" value="237"/>
@@ -34,7 +35,7 @@
     <property name="productspecialrestrictions" value="false"/>
     <property name="searchtype" value="categories"/>
     <property name="officestate" value=""/>
-    <property name="oe.edit.mode" value="editing"/>
+    <property name="oe.edit.mode" value="preview"/>
     <property name="datalevel" value="advanced"/>
     <property name="orderingcost" value="false"/>
     <property name="openadmintoolbar" value="true"/>
@@ -47,9 +48,6 @@
     <property name="mailingzip" value=""/>
     <property name="mailingstate" value=""/>
   </properties>
-  <group id="video"/>
-  <group id="developers"/>
-  <group id="administrators"/>
-  <group id="photoeditors"/>
   <group id="visualdata"/>
+  <group id="administrators"/>
 </user>
