@@ -12,6 +12,7 @@
 	<commandmap os="LINUX">
 		<commandbase>./WEB-INF/bin/linux</commandbase>
 		<exiftoolthumb>./exiftoolthumb.sh</exiftoolthumb>
+		<mencodermkv>./mencodermkv.sh</mencodermkv>
 		<asperaupload>./aspera/upload.sh</asperaupload>
 	</commandmap>
 	<commandmap os="WINDOWS">
