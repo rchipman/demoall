@@ -4,8 +4,8 @@
  
 	<property name="editable">true</property>
 	<script id="jquery" src="/system/components/javascript/jquery-1.4.2.js" />
-
+<!--
 	<property name="authenticationdomain">workgroup</property>
 	<property name="authenticationserver">192.168.1.1</property>
-
+-->
 </page>
