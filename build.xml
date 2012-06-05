@@ -25,7 +25,7 @@
 	--> 
 	<property environment="env" />
 
-	<property name="version"  value="7.${env.BUILD_NUMBER}"/>
+	<property name="version"  value="${majorversion}.${env.BUILD_NUMBER}"/>
 	<property name="deployDir" value="deploy"/>
   	<property name="report" value="${deployDir}"/>
 	
