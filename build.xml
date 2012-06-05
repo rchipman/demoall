@@ -41,10 +41,10 @@
     <mkdir dir="${wardir}/WEB-INF/" />
 	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-
+<!--
   	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}app-eml/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-
+-->
 	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 <!--
