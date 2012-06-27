@@ -25,18 +25,20 @@
 
 	</bean>
  -->	
-<!-- 
-	<bean id="postMail" class="org.entermedia.email.ElasticPostMail" >
+ 
+	
+<bean id="postMail" class="org.entermedia.email.ElasticPostMail" >
       <property name="smtpUsername"><value>ian@ijsolutions.ca</value></property>
-      <property name="smtpPassword"><value>ASK IAN</value></property>
+	 <property name="smtpPassword"><value>30161a93-bc1b-45c2-b5e0-ab4aab949572</value></property>
       <property name="smtpSecured"><value>true</value></property>
       <property name="smtpServer"><value>smtp.gmail.com</value></property>
       <property name="port"><value>465</value></property>
       <property name="sslEnabled"><value>true</value></property>
       
-          <property name="pageManager"><ref bean="pageManager"/></property>
+	  <property name="pageManager"><ref bean="pageManager"/></property>
       
-        </bean>
- -->        
+	</bean>
+   
+        
 </beans>
         

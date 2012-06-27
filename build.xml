@@ -12,7 +12,8 @@
 	<property name="wardir" location="${build}/wartmp"/>
 	<property name="webapp" location="${basedir}/webapp"/>
 	<property name="webinf" location="${webapp}/WEB-INF"/>
-	
+	<property name="branch" value="" />
+		<property name="majorversion" value="7" />
 	<!-- 
 		========================================================================
 		Anthill build server properties.  These properties will be passed in
@@ -24,7 +25,7 @@
 	--> 
 	<property environment="env" />
 
-	<property name="version"  value="7.${env.BUILD_NUMBER}"/>
+	<property name="version"  value="${majorversion}.${env.BUILD_NUMBER}"/>
 	<property name="deployDir" value="deploy"/>
   	<property name="report" value="${deployDir}"/>
 	
@@ -38,19 +39,19 @@
 
   <target name="update-dependencies" depends="clean">
     <mkdir dir="${wardir}/WEB-INF/" />
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
+<!--
+  	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}app-eml/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
+-->
+	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
-  	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/app-eml/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}extension-ooffice/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
-	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/extension-ooffice/lastSuccessfulBuild/artifact/deploy/install.xml"/>
-	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
 	<!-- Add tracker, loudmouth moneymaker etc -->
