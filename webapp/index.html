@@ -1,52 +1,25 @@
 
-#if ( $user )
-			
-			<div class="clearfix">
-				<div class="list-container">
-					<h2>Your Divisions</h2>
-					<ul id="master-list">
-						
-						#set( $sitesearcher = $searcherManager.getSearcher("media","site") )
-						#set( $sites = $sitesearcher.fieldSearch("appcatalogid",$catalogid ) )
-						
-						
-						#foreach( $site in $sites)
-						
-							#if ( $pages.canView( "/$site.deploypath/" ) )
-								<li><a class="section-title" href="/$site.deploypath/">$site</a></li>
-							#end
-						#end
-						
-						
-						
-						
-					</ul>
-				</div>
-				<div class="list-container">
-					<h2>Other Divisions</h2>
-					<ul id="master-list">
-						
-
-						
-							#foreach( $site in $sites)
-						
-							#if ( !$pages.canView( "/$site.deploypath/" ) )
-								<li><span class="section-title" >$site</scan></li>
-							#end
-						#end
-
-						
-					</ul>
-				</div>
-			</div>
-			
-#else	
-		
-			<div id="login-box" class="clearfix;">
-				<h4>Login</h4>
-				$pages.include("system/components/authentication/loginform.html",$context)
-			</div>		
-			
-		
-			
-#end
+        <div class="container">
+            <div id="header">
+                <div id="logo">
+                    <a class="ir" href="/manager/index.html">EnterMedia Manager</a>
+                </div>
+                <div id="user-status">
+                    
+                </div>
+            </div>
+            <h1 class="page-title">Welcome to EnterMedia!</h1>
+            <h2 class="page-subtitle">Please choose the application to work with. The default username and password is admin admin</h2>
+            
+            
+            <h1 class="section-header">All Applications</h1>
+                <ul class="server-links">
+                    <li><a href="$home/emshare">EMShare <span>(/emshare)</span></a></li>
+                    <li><a href="$home/manager">Manager <span>(/manager)</span></a></li>
+                </ul>
+            
+            <div id="footer" class="col12 clearfix">
+                <p>
+                    Powered by EnterMedia | <a href="http://www.entermediasoftware.com">www.entermediasoftware.com</a>
+                </p>
+            </div>
