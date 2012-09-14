@@ -6,6 +6,7 @@
 		<exiftoolthumb>./exiftoolthumb.sh</exiftoolthumb>
 		<asperaupload>./aspera/upload.sh</asperaupload>
 		<convert>/usr/local/Cellar/imagemagick/6.7.1-1/bin/convert</convert>
+		<composite>/usr/local/Cellar/imagemagick/6.7.1-1/bin/composite</composite>
 		<ffmpeg>/usr/local/Cellar/ffmpeg/0.9/bin/ffmpeg</ffmpeg>
 		<qt-faststart>./qt-faststart</qt-faststart>
 	</commandmap>
