@@ -11,12 +11,36 @@
             <h1 class="page-title">Welcome to EnterMedia!</h1>
             <h2 class="page-subtitle">Please choose the application to work with. The default username and password is admin admin</h2>
             
-            
-            <h1 class="section-header">All Applications</h1>
-                <ul class="server-links">
-                    <li><a href="$home/emshare">EMShare <span>(/emshare)</span></a></li>
-                    <li><a href="$home/manager">Manager <span>(/manager)</span></a></li>
-                </ul>
+
+#if ( $user && $user.enabled == "true" )
+			
+			<div class="clearfix">
+				<div class="list-container">
+			            <h1 class="section-header">All Applications</h1>
+					<ul id="master-list">
+
+						#set( $sitesearcher = $searcherManager.getSearcher("media","site") )
+						#set( $sites = $sitesearcher.getAllHits() )
+						
+						#foreach( $site in $sites)
+								<li ><a class="section-title" href="/$site.frontendid/">$site</a></li>
+						#end
+						
+						
+					</ul>
+				</div>
+			</div>
+			
+#elseif ( $user && $user.enabled == "false")
+
+    $pages.include("./nopermissions.html")
+
+#else 	
+		
+				$pages.include("/system/components/authentication/loginform.html",$context)	
+			
+#end
+
             
             <div id="footer" class="col12 clearfix">
                 <p>
