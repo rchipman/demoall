@@ -83,6 +83,7 @@ h2, h3, h4 {
 }
 h2 {
     font-size: 18px;
+    font-family: monospace;
 }
 h3 {
     font-size: 14px;
