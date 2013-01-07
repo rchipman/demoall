@@ -1,0 +1,46 @@
+
+        <div class="container">
+            <div id="header">
+                <div id="logo">
+                    <a class="ir" href="/manager/index.html">EnterMedia Manager</a>
+                </div>
+                <div id="user-status">
+                    
+                </div>
+            </div>
+
+
+#if ( $user && $user.enabled == "true" )
+			
+			<div class="clearfix">
+				<div class="list-container">
+			            <h1 class="section-header">All Applications</h1>
+					<ul class="server-links">
+
+						#set( $sitesearcher = $searcherManager.getSearcher("media","site") )
+						#set( $sites = $sitesearcher.getAllHits() )
+						
+						#foreach( $site in $sites)
+								<li ><a class="section-title" href="/$site.frontendid/">$site <span>($site.frontendid)</span></a></li>
+						#end
+						
+					</ul>
+				</div>
+			</div>
+			
+#elseif ( $user && $user.enabled == "false")
+
+    $pages.include("./nopermissions.html")
+
+#else 	
+		
+				$pages.include("/system/components/authentication/loginform.html",$context)	
+			
+#end
+
+            
+            <div id="footer" class="col12 clearfix">
+                <p>
+                    Powered by EnterMedia | <a href="http://www.entermediasoftware.com">www.entermediasoftware.com</a>
+                </p>
+            </div>
