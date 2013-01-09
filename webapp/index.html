@@ -8,9 +8,7 @@
                     
                 </div>
             </div>
-            <h1 class="page-title">Welcome to EnterMedia!</h1>
-            <h2 class="page-subtitle">Please choose the application to work with. The default username and password is admin admin</h2>
-            
+
 
 #if ( $user && $user.enabled == "true" )
 			
@@ -25,7 +23,6 @@
 						#foreach( $site in $sites)
 								<li ><a class="section-title" href="/$site.frontendid/">$site <span>($site.frontendid)</span></a></li>
 						#end
-						
 						
 					</ul>
 				</div>
