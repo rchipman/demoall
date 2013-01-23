@@ -2,13 +2,12 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
 <beans>
-<!-- 
 	<bean id="postMail" class="org.entermedia.email.PostMail">
 		<property name="smtpUsername">
-			<value>cburkey@openedit.org</value>
+			<value>gatekeeper@entermediasoftware.com</value>
 		</property>
 		<property name="smtpPassword">
-			<value>8be05f16-f8ef-44eb-9b47-XXX</value>
+			<value>1ef79afe-1f93-4dea-b4ea-f40d81f12da3</value>
 		</property>
 		<property name="smtpSecured">
 			<value>true</value>
@@ -24,21 +23,7 @@
 		</property>
 
 	</bean>
- -->	
  
-	
-<bean id="postMail" class="org.entermedia.email.ElasticPostMail" >
-      <property name="smtpUsername"><value>ian@ijsolutions.ca</value></property>
-	 <property name="smtpPassword"><value>30161a93-bc1b-45c2-b5e0-ab4aab949572</value></property>
-      <property name="smtpSecured"><value>true</value></property>
-      <property name="smtpServer"><value>smtp.gmail.com</value></property>
-      <property name="port"><value>465</value></property>
-      <property name="sslEnabled"><value>true</value></property>
-      
-	  <property name="pageManager"><ref bean="pageManager"/></property>
-      
-	</bean>
-   
         
 </beans>
         

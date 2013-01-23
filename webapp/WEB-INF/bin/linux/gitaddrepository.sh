@@ -1,7 +1,6 @@
 #!/bin/sh
 localpath=$1
-url=$2
-checkoutpath=$3
+checkoutpath=$2
 
 mkdir -p $localpath
 cd $localpath
@@ -12,4 +11,4 @@ git config receive.denyNonFastforwards true
 
 mkdir -p $checkoutpath
 cd $checkoutpath
-git clone $url
+git clone $localpath
