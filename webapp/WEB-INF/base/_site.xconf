@@ -59,5 +59,8 @@
 	<page-action name="Admin.allowEditing"/>
 
   <property name="oe.edit.draftedits">true</property>
+  
+  <!-- autologin password expiry (in days) provided in email -->
+  <property name="temporary_password_expiry">1</property>
   	
 </page>
