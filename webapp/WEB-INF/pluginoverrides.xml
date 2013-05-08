@@ -21,9 +21,11 @@
 		<property name="pageManager">
 			<ref bean="pageManager" />
 		</property>
+		<property name="moduleManager">
+        	<ref bean="moduleManager" />
+        </property>
 
 	</bean>
- 
-        
+	
 </beans>
         
