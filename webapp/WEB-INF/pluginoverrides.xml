@@ -4,10 +4,10 @@
 <beans>
 	<bean id="postMail" class="org.entermedia.email.PostMail">
 		<property name="smtpUsername">
-			<value>gatekeeper@entermediasoftware.com</value>
+			<value>demo@entermediasoftware.com</value>
 		</property>
 		<property name="smtpPassword">
-			<value>1ef79afe-1f93-4dea-b4ea-f40d81f12da3</value>
+			<value>48fd231c-ee8b-43fc-b9f5-7f80ce32717c</value>
 		</property>
 		<property name="smtpSecured">
 			<value>true</value>
@@ -24,8 +24,6 @@
 		<property name="moduleManager">
         	<ref bean="moduleManager" />
         </property>
-
 	</bean>
-	
 </beans>
         
