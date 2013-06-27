@@ -5,8 +5,10 @@
 
 	<property name="autologingroup">guest</property>
 	<property name="referredgroup">media</property>
+	<!--
 	<property name="systemfromemail">noreply@entermediasoftware.com</property>
 	<property name="systemfromemailname">EnterMedia</property>
+  	-->
   	<property name="allopathrequestactions">true</property>
 	<property name="uploadcatalog">media/catalogs/public</property>
 	<property name="uploadsourcepath">uploads</property>
@@ -59,5 +61,8 @@
 	<page-action name="Admin.allowEditing"/>
 
   <property name="oe.edit.draftedits">true</property>
+  
+  <!-- autologin password expiry (in days) provided in email -->
+  <property name="temporary_password_expiry">1</property>
   	
 </page>

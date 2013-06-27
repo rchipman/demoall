@@ -4,7 +4,7 @@
   <user-name>admin</user-name>
   <password>DES:2JPGMLB8Y60=</password>
   <creation-date>1146231775645</creation-date>
-  <lastLogined-Time>2012-03-19 14:58:31 -0400</lastLogined-Time>
+  <lastLogined-Time>2012-07-18 15:00:45 -0400</lastLogined-Time>
   <properties>
     <property name="productvpa" value="false"/>
     <property name="officecountry" value="237"/>
@@ -14,6 +14,7 @@
     <property name="productexpirations" value="false"/>
     <property name="productzones" value="false"/>
     <property name="productlegal" value="false"/>
+    <property name="jobtitle" value=""/>
     <property name="mailingcountry" value="237"/>
     <property name="mobilephone" value=""/>
     <property name="productreviewers" value="false"/>
@@ -38,6 +39,7 @@
     <property name="oe.edit.mode" value="preview"/>
     <property name="datalevel" value="advanced"/>
     <property name="orderingcost" value="false"/>
+    <property name="companyname" value=""/>
     <property name="openadmintoolbar" value="true"/>
     <property name="email" value="support@openedit.org"/>
     <property name="showdebug" value="false"/>
