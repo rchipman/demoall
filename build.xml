@@ -62,7 +62,7 @@
 			<include name="WEB-INF/data/system/**" />
 			<include name="WEB-INF/*.*" />
 			<include name="media/**" />
-			<include name="eml/**" />
+			<include name="openinstitute/**" />
 			<include name="emshare/**" />
 			<include name="theme/**" />
    			<include name="entermedia/_site.xconf" />
