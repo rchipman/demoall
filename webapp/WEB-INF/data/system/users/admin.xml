@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <user enabled="true">
-  <user-name>admin</user-name>
-  <password>DES:2JPGMLB8Y60=</password>
+  <user-name><![CDATA[admin]]></user-name>
+  <password><![CDATA[DES:2JPGMLB8Y60=]]></password>
   <creation-date>1146231775645</creation-date>
-  <lastLogined-Time>2012-07-18 15:00:45 -0400</lastLogined-Time>
+  <lastLogined-Time>2013-10-24 17:13:46 -0400</lastLogined-Time>
   <properties>
     <property name="productvpa" value="false"/>
     <property name="officecountry" value="237"/>
@@ -50,6 +50,6 @@
     <property name="mailingzip" value=""/>
     <property name="mailingstate" value=""/>
   </properties>
-  <group id="visualdata"/>
   <group id="administrators"/>
+  <group id="visualdata"/>
 </user>

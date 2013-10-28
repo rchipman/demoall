@@ -5,5 +5,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/extension-openedit"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/resin3.x"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/app-mediamoneymaker"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-aws"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
