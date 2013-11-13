@@ -57,7 +57,7 @@
 	<!-- Add tracker, loudmouth moneymaker etc -->
   	<copy todir="${wardir}"  preservelastmodified="true">
 		<fileset dir="${webapp}">
-			<include name="WEB-INF/base/**" />
+			
 			<include name="WEB-INF/bin/**" />
 			<include name="WEB-INF/data/system/**" />
 			<include name="WEB-INF/*.*" />
