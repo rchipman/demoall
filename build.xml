@@ -55,9 +55,9 @@
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
 	<!-- Add tracker, loudmouth moneymaker etc -->
-  	<copy todir="${wardir}"  preservelastmodified="true">
+  	<copy todir="${wardir}"  preservelastmodified="true" followsymlinks="false">
 		<fileset dir="${webapp}">
-			
+			<include name="WEB-INF/base/**" />			
 			<include name="WEB-INF/bin/**" />
 			<include name="WEB-INF/data/system/**" />
 			<include name="WEB-INF/*.*" />
