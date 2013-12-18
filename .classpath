@@ -4,8 +4,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-core"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/extension-openedit"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/resin3.x"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/app-mediamoneymaker"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/extension-aws"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
