@@ -3,7 +3,6 @@
 <head>
 	<title>EnterMedia Manager | Wizard</title>
 
-
 #foreach( $script in $content.getScriptPaths() )
 	<script type="text/javascript" src="$home$script">  </script>
 #end
@@ -13,7 +12,7 @@
 #end
 
 </head>
-	<body>
+	<body  showadmintoolbar="$canshowadmintoolbar">
 	$pages.includeContent()
 	</body>
 </html>
