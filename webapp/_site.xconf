@@ -5,6 +5,8 @@
 	<property name="editable">true</property>
 	
 	<script id="jquery" src="/system/components/javascript/jquery-1.7.1.min.js" />
+	<script id="colorpicker-js" src="/${applicationid}/components/javascript/colorpicker/jquery.minicolors.js"/> 
+	<style id="colorpicker-css" href="/${applicationid}/components/javascript/colorpicker/jquery.minicolors.css"/>
 <!--
 	<property name="authenticationdomain">workgroup</property>
 	<property name="authenticationserver">192.168.1.1</property>
