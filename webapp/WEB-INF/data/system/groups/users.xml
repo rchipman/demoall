@@ -3,7 +3,5 @@
 <group id="users">
   <group-name>Users</group-name>
   <permissions/>
-  <properties>
-    <property name="enabled" value="true"/>
-  </properties>
+  <properties/>
 </group>
