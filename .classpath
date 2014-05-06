@@ -4,6 +4,5 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-core"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/extension-openedit"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/resin3.x"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
